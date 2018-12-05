@@ -1,19 +1,19 @@
 try:
     from urllib.parse import urljoin
 except ImportError:
-    from urlparse import urljoin
+    from urlparse2 import urljoin
 
 # Third-party imports...
 import requests
 
 # Local imports...
-from project.constants import BASE_URL
+from constants import BASE_URL
 
-TODOS_URL = urljoin(BASE_URL, 'todos')
+HEROKU_URL = urljoin(BASE_URL, 'incidents')
 
 
-def get_todos():
-    response = requests.get(TODOS_URL)
+def get_heroku():
+    response = requests.get(HEROKU_URL)
     if response.ok:
         return response
     else:

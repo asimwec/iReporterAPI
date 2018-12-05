@@ -1,1 +1,1 @@
-BASE_URL = 'http://jsonplaceholder.typicode.com'
+BASE_URL = 'https://ireporter-api-app.herokuapp.com/api/v1/'
