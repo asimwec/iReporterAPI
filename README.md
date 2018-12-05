@@ -1,5 +1,4 @@
 # iReporterAPI
 
 
-https://coveralls.io/repos/github/asimwec/iReporterAPI/badge.svg?branch=master 
-    :target: https://coveralls.io/github/asimwec/iReporterAPI?branch=master 
+[![Coverage Status](https://coveralls.io/repos/github/asimwec/iReporterAPI/badge.svg)](https://coveralls.io/github/asimwec/iReporterAPI)
