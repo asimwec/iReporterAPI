@@ -11,6 +11,7 @@ install:
 # command to run tests
 script:
   - pytest --cov=asimwec/iReporterAPI
+  - coverage run --source cookiecutter setup.py test
   - nosetests
 after_success:
   - coveralls
