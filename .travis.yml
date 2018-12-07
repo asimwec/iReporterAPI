@@ -10,8 +10,8 @@ install:
   - pip install coveralls
 # command to run tests
 script:
-  - pytest --cov=asimwec/iReporterAPI
+  - pytest
   - coverage run test_iReporterApi.py test
-  - nosetests --cov=asimwec/iReporterAPI
+  - nosetests
 after_success:
   - coveralls
