@@ -11,7 +11,8 @@ install:
 # command to run tests
 script:
   - pytest
-  - coverage run test_iReporterApi.py test
+  - coverage run --source=test_iReporterApi.py test
   - nosetests
 after_success:
+  - COVERALLS_REPO_TOKEN=BLX8M9VNcKdisRvlSQxKN3xbWr1UVCG57 coveralls
   - coveralls
