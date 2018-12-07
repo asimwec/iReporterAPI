@@ -12,6 +12,6 @@ install:
 script:
   - pytest --cov=asimwec/iReporterAPI
   - coverage run test_iReporterApi.py test
-  - nosetests
+  - nosetests --cov=asimwec/iReporterAPI
 after_success:
   - coveralls
